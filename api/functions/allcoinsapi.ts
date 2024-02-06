@@ -19,6 +19,12 @@ export const DetailsCoins = async (id: string | number) => {
     const res = await axiosInstance.get(`https://api.coincap.io/v2/assets/${id}`)
     return res.data.data
 }
+export const FetchHistory=async(id:String| number)=>{
+    const res = await axiosInstance.get(`https://api.coincap.io/v2/assets/${id}/history?interval=d1`)
+    return res
+}
+
+
 
 //// market 
 export const MarketList = async () => {

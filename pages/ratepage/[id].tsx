@@ -23,9 +23,9 @@ export default function FetchId(){
 
     });
     console.log("rate page Id::",data)
-    return(
-        <h1>{data.id}</h1>
+    // return(
+    //     <h1>{data.id}</h1>
         
-    )
+    // )
 
 }

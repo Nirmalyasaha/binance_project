@@ -29,10 +29,10 @@ export default function RatePage(){
              <Table>
         <TableHead>
           <TableRow>
-            <TableCell>Coin Name</TableCell>
-            <TableCell>Price</TableCell>
-            <TableCell>Change</TableCell>
-            <TableCell>24h Volume</TableCell>
+            <TableCell sx={{color:"red"}}>Coin Name</TableCell>
+            <TableCell sx={{color:"red"}}>Price</TableCell>
+            <TableCell sx={{color:"red"}}>Change</TableCell>
+            <TableCell sx={{color:"red"}}>24h Volume</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -40,7 +40,8 @@ export default function RatePage(){
             <TableRow key={key.id}>
               <TableCell>
                 <Link href={`/ratepage/${item.id}`}>
-                {item.symbol}</Link>
+                {item.symbol}
+                </Link>
               
               </TableCell>
               <TableCell>
@@ -48,9 +49,11 @@ export default function RatePage(){
             
               </TableCell>
               <TableCell>
+                {item.type}
             
               </TableCell>
               <TableCell>
+                {item.rateUsd}
               
               </TableCell>
             </TableRow>

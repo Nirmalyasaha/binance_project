@@ -4,7 +4,7 @@ import { Typography, Table, TableContainer, TableHead, TableRow, TableCell, Tabl
 
 
 
-interface ExchangeData{
+ interface ExchangeData{
     exchangeId: string
   name: string
   rank: string
@@ -30,10 +30,10 @@ export default function Exchange(){
         <Table>
    <TableHead>
      <TableRow>
-       <TableCell>Coin Name</TableCell>
-       <TableCell>Price</TableCell>
-       <TableCell>Change</TableCell>
-       <TableCell>24h Volume</TableCell>
+       <TableCell sx={{color:"red"}}>Coin Name</TableCell>
+       <TableCell sx={{color:"red"}}>Price</TableCell>
+       <TableCell sx={{color:"red"}}>Change</TableCell>
+       <TableCell sx={{color:"red"}}>24h Volume</TableCell>
      </TableRow>
    </TableHead>
    <TableBody>
@@ -59,8 +59,7 @@ export default function Exchange(){
        </TableRow>
      ))}
    </TableBody>
- </Table>
-       
+ </Table>      
    </TableContainer>
 
 

@@ -37,26 +37,27 @@ export default function MarketListPAge(){
              <Table>
         <TableHead>
           <TableRow>
-            <TableCell>Coin Name</TableCell>
-            <TableCell>Price</TableCell>
-            <TableCell>Change</TableCell>
-            <TableCell>24h Volume</TableCell>
+            <TableCell sx={{color:"red"}}>Coin Name</TableCell>
+            <TableCell sx={{color:"red"}}>Price</TableCell>
+            <TableCell sx={{color:"red"}}>Change</TableCell>
+            <TableCell sx={{color:"red"}}>24h Volume</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           { data?.map((item: marketlist, key:any) => (
             <TableRow key={key}>
               <TableCell>
-              {item.rank}
+              {item.baseId}
               </TableCell>
               <TableCell>
+                {item.priceQuote}
             
               </TableCell>
               <TableCell>
-            
+            {item.updated }
               </TableCell>
               <TableCell>
-              
+              {item.volumeUsd24Hr}
               </TableCell>
             </TableRow>
           ))}
