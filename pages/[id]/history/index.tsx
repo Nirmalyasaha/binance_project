@@ -1,4 +1,3 @@
-
 import { FetchHistory } from "@/api/functions/allcoinsapi"
 import { useRouter } from "next/router";
 import { useQuery } from "react-query"
@@ -13,6 +12,6 @@ export default function HistoryPage(){
         queryKey:["HistoryPage"],
         queryFn: ()=> FetchHistory(String(id))
     });
-    console.log("history date",data)
+    console.log("history date",data);
 
 }

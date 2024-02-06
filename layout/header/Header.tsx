@@ -41,7 +41,7 @@ import { Link } from "@mui/material"
       <li><Link href="/market">MARKET</Link></li>
       <li><Link href="/exchange">EXCHANGE</Link></li>
       <li><Link href="/ratepage">RATE</Link></li>
-      {/* <li><Link href="/component">History</Link></li> */}
+      {/* <li><Link href="/history">History</Link></li> */}
     </ul>
     </>
   )

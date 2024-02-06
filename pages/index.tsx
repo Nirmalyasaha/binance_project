@@ -35,6 +35,7 @@ export default function HomePage() {
             <TableCell sx={{color:"red"}}>Price</TableCell>
             <TableCell sx={{color:"red"}}>Change</TableCell>
             <TableCell sx={{color:"red"}}>24h Volume</TableCell>
+            <TableCell sx={{color:"red"}}>History</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -55,6 +56,11 @@ export default function HomePage() {
               <TableCell>
               {coin.volumeUsd24Hr}
               </TableCell>
+              <TableCell>
+                <Link href={`${coin.id}/history`}>
+                </Link>
+              </TableCell>
+              
             </TableRow>
           ))}
         </TableBody>
